@@ -1,0 +1,29 @@
+---
+- name: Deploy Flask App with Docker
+  hosts: webserver
+  become: yes
+  tasks:
+
+    - name: Install Git (if not already installed)
+      dnf:
+        name: git
+        state: present
+
+    - name: Clone Flask App from GitHub
+      git:
+        repo: "https://github.com/Shreyas2831/Devops_01.git"
+        dest: "/home/ec2-user/flask-app"
+        version: main
+        force: yes
+
+    - name: Change ownership of Flask app folder
+      file:
+        path: /home/ec2-user/flask-app
+        owner: ec2-user
+        group: ec2-user
+        recurse: yes
+
+    - name: Build and start Flask app using Docker Compose
+      shell: |
+        cd /home/ec2-user/flask-app
+        docker-compose up --build -d
