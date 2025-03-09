@@ -30,7 +30,7 @@ git clone https://github.com/Shreyas2831/Devops_01.git cd Devops_01
 
 
 ### Step 2: Configure AWS Credentials
-aws configure
+aws configure /n
 Enter your AWS Access Key, Secret Key, Region, and Output Format.
 
 ### Step 3: Deploy AWS Infrastructure with Terraform
