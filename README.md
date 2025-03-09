@@ -1,4 +1,4 @@
-# Automated Flask Deployment with Terraform, Ansible, Docker, and GitHub Actions
+# Automated Flask Web App Deployment with Terraform, Ansible, Docker, and GitHub Actions
 
 ## Overview
 This project demonstrates a streamline automated deployment for a Flask-based web application using AWS, Terraform, Ansible, Docker, and GitHub Actions. It has implemented Infrastructure as Code (IaC), configuration management, containerization, and CI/CD automation to ease application deployment.
