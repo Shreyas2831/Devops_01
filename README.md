@@ -1,5 +1,3 @@
-# Devops_01
-
 # Automated Flask Deployment with Terraform, Ansible, Docker, and GitHub Actions
 
 ## Overview
