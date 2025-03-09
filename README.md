@@ -51,7 +51,7 @@ docker build -t flask-app . docker-compose up -d
 ## Application Usage
 - Access the application: http://<EC2-Public-IP>:5000
 - Check running containers: 
-docker ps
+. docker ps
 
 - View application logs:
 docker logs flask-app
